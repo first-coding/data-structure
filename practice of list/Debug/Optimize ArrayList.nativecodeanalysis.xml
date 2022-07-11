@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+      <FILENAME>Optimize ArrayLIst.h</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“L”的引用。</DESCRIPTION>
+    <FUNCTION>ListInit</FUNCTION>
+    <DECORATED>ListInit</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>33</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“L”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>34</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“L”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+      <FILENAME>Optimize ArrayLIst.h</FILENAME>
+      <LINE>75</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>从“NewTable”中读取的数据无效: 可读大小为“(unsigned int)L-&gt;maxsize*sizeof(ListItem)”个字节，但可能读取了“8”个字节。</DESCRIPTION>
+    <FUNCTION>ListInsert</FUNCTION>
+    <DECORATED>ListInsert</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>68</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“NewTable”是一个 0 字节数组</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>23</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“j&gt;=k”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>从“NewTable”中读取无效(位于其可读范围之外)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+      <FILENAME>Optimize ArrayLIst.h</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>写入到“NewTable”时缓冲区溢出: 可写大小为“(unsigned int)L-&gt;maxsize*sizeof(ListItem)”个字节，但可能写入了“8”个字节。</DESCRIPTION>
+    <FUNCTION>ListInsert</FUNCTION>
+    <DECORATED>ListInsert</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>68</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“NewTable”是一个 0 字节数组</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>写入到“NewTable”无效(位于其可写范围之外)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+      <FILENAME>Optimize ArrayLIst.h</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“NewTable”的引用。</DESCRIPTION>
+    <FUNCTION>ListInsert</FUNCTION>
+    <DECORATED>ListInsert</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>68</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“NewTable”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“NewTable”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+      <FILENAME>Optimize ArrayLIst.h</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>写入到“NewTable”时缓冲区溢出: 可写大小为“(unsigned int)L-&gt;maxsize*sizeof(ListItem)”个字节，但可能写入了“8”个字节。</DESCRIPTION>
+    <FUNCTION>ListDelete</FUNCTION>
+    <DECORATED>ListDelete</DECORATED>
+    <FUNCLINE>90</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>94</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>95</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>96</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>97</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“NewTable”是一个数组</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;L-&gt;n”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>99</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>29</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“i”可能等于 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>继续此循环(假定“i&lt;L-&gt;n”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>99</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>写入到“NewTable”无效(位于其可写范围之外)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+      <FILENAME>Optimize ArrayLIst.h</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“NewTable”的引用。</DESCRIPTION>
+    <FUNCTION>ListDelete</FUNCTION>
+    <DECORATED>ListDelete</DECORATED>
+    <FUNCLINE>90</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>94</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>95</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>96</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>97</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“NewTable”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;L-&gt;n”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\practice of list\</FILEPATH>
+        <FILENAME>Optimize ArrayLIst.h</FILENAME>
+        <LINE>99</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“NewTable”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

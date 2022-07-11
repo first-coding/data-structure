@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\Queue\</FILEPATH>
+      <FILENAME>ArrayQueue.h</FILENAME>
+      <LINE>21</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“Q”的引用。</DESCRIPTION>
+    <FUNCTION>QueueInit</FUNCTION>
+    <DECORATED>QueueInit</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Queue\</FILEPATH>
+        <FILENAME>ArrayQueue.h</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“Q”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Queue\</FILEPATH>
+        <FILENAME>ArrayQueue.h</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“Q”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

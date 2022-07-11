@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+      <FILENAME>pointer of list.c</FILENAME>
+      <LINE>4</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“L”的引用。</DESCRIPTION>
+    <FUNCTION>ListInit</FUNCTION>
+    <DECORATED>ListInit</DECORATED>
+    <FUNCLINE>2</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>3</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“L”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>4</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“L”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+      <FILENAME>pointer of list.c</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“p”的引用。</DESCRIPTION>
+    <FUNCTION>ListRetrieve</FUNCTION>
+    <DECORATED>ListRetrieve</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>23</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“p”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>27</LINE>
+        <COLUMN>1</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“p”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+      <FILENAME>pointer of list.c</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“p”的引用。</DESCRIPTION>
+    <FUNCTION>ListInsert</FUNCTION>
+    <DECORATED>ListInsert</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>39</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>40</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>23</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“p”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>44</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>45</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>46</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此分支(假定“k”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>47</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“p”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+      <FILENAME>pointer of list.c</FILENAME>
+      <LINE>64</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“q”的引用。</DESCRIPTION>
+    <FUNCTION>ListDelete</FUNCTION>
+    <DECORATED>ListDelete</DECORATED>
+    <FUNCLINE>55</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>57</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>58</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>60</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>62</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“q”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>64</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“q”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+      <FILENAME>pointer of list.c</FILENAME>
+      <LINE>65</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>28182</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针的引用。“p”包含与“q”相同的 NULL 值。查看第 64 行以找出可能会发生此情况的前一位置</DESCRIPTION>
+    <FUNCTION>ListDelete</FUNCTION>
+    <DECORATED>ListDelete</DECORATED>
+    <FUNCLINE>55</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>57</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>58</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>60</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>62</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>64</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“p”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\exam  of list\</FILEPATH>
+        <FILENAME>pointer of list.c</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“p”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

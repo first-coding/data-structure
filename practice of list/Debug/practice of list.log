@@ -1,0 +1,7 @@
+﻿  Optimize ArrayList.c
+D:\Data Structure\practice of list\Optimize ArrayLIst.h(34): warning C6011: 取消对 NULL 指针“L”的引用。
+D:\Data Structure\practice of list\Optimize ArrayLIst.h(75): warning C6385: 从“NewTable”中读取的数据无效: 可读大小为“(unsigned int)L->maxsize*sizeof(ListItem)”个字节，但可能读取了“8”个字节。
+D:\Data Structure\practice of list\Optimize ArrayLIst.h(77): warning C6386: 写入到“NewTable”时缓冲区溢出: 可写大小为“(unsigned int)L->maxsize*sizeof(ListItem)”个字节，但可能写入了“8”个字节。
+D:\Data Structure\practice of list\Optimize ArrayLIst.h(77): warning C6011: 取消对 NULL 指针“NewTable”的引用。
+D:\Data Structure\practice of list\Optimize ArrayLIst.h(99): warning C6386: 写入到“NewTable”时缓冲区溢出: 可写大小为“(unsigned int)L->maxsize*sizeof(ListItem)”个字节，但可能写入了“8”个字节。
+D:\Data Structure\practice of list\Optimize ArrayLIst.h(99): warning C6011: 取消对 NULL 指针“NewTable”的引用。
