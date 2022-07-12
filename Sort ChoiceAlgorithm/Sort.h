@@ -1,6 +1,9 @@
 #pragma once
 typedef int Item;
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define MAXSIZE 10
 #define Big_Head(A,B) (A<B)
 #define Small_Head(A,B) (A>B)
 #define less(A,B) (A<B)
@@ -99,7 +102,7 @@ void quicksort(int left,Item *a, int right) {
 	a[left] = a[i];
 	a[i] = temp;
 	quicksort(left,a,i - 1);
-	quicksort(i + 1,a,right);
+	quicksort(i+1,a,right);
 }
 
 
