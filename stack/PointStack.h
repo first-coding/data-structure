@@ -38,11 +38,13 @@ void Push(StackItem x, Stack S) {
 	S->top = p;
 }
 
-void Pop(Stack S) {
-	if (StackEmpty(S)) return;
+StackItem Pop(Stack S) {
+	if (StackEmpty(S)) return 0;
+	StackItem x = S->top->element;
 	slink p = S->top;
 	S->top = p->next;
 	free(p);
+	return x;
 }
 
 void StackShow(StackItem x) {
