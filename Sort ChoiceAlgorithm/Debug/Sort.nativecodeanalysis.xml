@@ -44,18 +44,4 @@
       </SFA>
     </PATH>
   </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-      <FILENAME>Sort.c</FILENAME>
-      <LINE>10</LINE>
-      <COLUMN>34</COLUMN>
-    </SFA>
-    <DEFECTCODE>26451</DEFECTCODE>
-    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
-    <FUNCTION>main</FUNCTION>
-    <DECORATED>main</DECORATED>
-    <FUNCLINE>3</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
 </DEFECTS>

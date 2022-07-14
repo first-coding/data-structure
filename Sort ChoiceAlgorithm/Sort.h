@@ -3,6 +3,7 @@ typedef int Item;
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include<math.h>
 #include "../stack/PointStack.h"
 
 #define push2(A,B,s) Push(B,s);Push(A,s);
@@ -250,3 +251,33 @@ void ThreeDivideSort(Item* a, int l, int r) {
 	sort(a, i, r);
 }
 //Three Quick Sort
+
+//merge sort
+void merge(int a[], int left1, int right1, int left2, int right2)
+{
+	int i = left1;
+	int j = left2;
+	int index = 0, b[10];
+	while (i <= right1 && j <= right2)
+	{
+		if (a[i] > a[j])
+			b[index++] = a[j++];
+		else
+			b[index++] = a[i++];
+	}
+	while (i <= right1)	b[index++] = a[i++];
+	while (j <= right2)	b[index++] = a[j++];
+	for (int i = 0; i < index; i++)
+		a[left1 + i] = b[i];
+}
+
+void mergeSort(int a[], int left, int right)
+{
+	if (left < right)
+	{
+		int mid = (left + right) / 2;
+		mergeSort(a, left, mid);
+		mergeSort(a, mid + 1, right);
+		merge(a, left, mid, mid + 1, right);
+	}
+}
