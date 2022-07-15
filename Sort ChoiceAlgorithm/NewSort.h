@@ -1,6 +1,7 @@
 #pragma once
 #include <stdio.h>
-#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 typedef int Item;
 void quicksort(int* a, int left, int right);
 void swap(int* a, int i, int j);

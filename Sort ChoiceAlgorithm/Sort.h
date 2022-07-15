@@ -1,10 +1,25 @@
 #pragma once
 typedef int Item;
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include<math.h>
 #include "../stack/PointStack.h"
+#include "../list/PointList.h"
+
+typedef link QItem;
+typedef QItem* Qaddr;
+typedef struct qnode* qlink;
+typedef struct qnode {
+	QItem element;
+	qlink next;
+}Qnode;
+typedef struct lqueue* Queue;
+typedef struct lqueue {
+	qlink first;
+	qlink last;
+}Lqueue;
 
 #define push2(A,B,s) Push(B,s);Push(A,s);
 #define M 15
@@ -253,11 +268,11 @@ void ThreeDivideSort(Item* a, int l, int r) {
 //Three Quick Sort
 
 //merge sort
-void merge(int a[], int left1, int right1, int left2, int right2)
+void Merge(int a[], int left1, int right1, int left2, int right2)
 {
 	int i = left1;
 	int j = left2;
-	int index = 0, b[10];
+ 	int index = 0, b[10];
 	while (i <= right1 && j <= right2)
 	{
 		if (a[i] > a[j])
@@ -278,6 +293,111 @@ void mergeSort(int a[], int left, int right)
 		int mid = (left + right) / 2;
 		mergeSort(a, left, mid);
 		mergeSort(a, mid + 1, right);
-		merge(a, left, mid, mid + 1, right);
+		Merge(a, left, mid, mid + 1, right);
 	}
+}
+
+//PointerList mergesort
+link merge(link a, link b) {
+	Node head;
+	link c = &head;
+	while (a && b) {
+		if (less(a->element, b->element)) {
+			c->next = a; c = a; a = a->next;
+		}
+		else {
+			c->next = b;
+			c = b;
+			b = b->next;
+		}
+	}
+	c->next = (!a) ? b : a;
+	return head.next;
+}
+
+link mergesort(link c) {
+	link a, b;
+	if (!c->next)return c;
+	a = c;
+	b = c->next;
+	while (b && b->next) {
+		c = c->next;
+		b = b->next->next;
+	}
+	b = c->next;
+	c->next = 0;
+	return merge(mergesort(a), mergesort(b));
+}
+
+//PointList && PointQueue mergesort
+Queue QueueInit() {
+	Queue Q = (Queue)malloc(sizeof * Q);
+	Q->first = Q->last = 0;
+	return Q;
+}
+
+qlink NewNodes() {
+	return (qlink)malloc(sizeof(Qnode));
+}
+
+void EnterQueue(QItem x, Queue Q) {
+	qlink news = NewNodes();
+	news->element = x;
+	news->next = 0;
+	if (Q->first == 0) {
+		Q->first = news;
+		Q->last = news;
+	}
+	else {
+		Q->last->next = news;
+		Q->last = news;
+	}
+}
+
+
+int QueueEmpty(Queue Q) {
+	return Q->first == 0;
+}
+
+QItem DeleteQueue(Queue Q) {
+	if (QueueEmpty(Q)) return 0;
+	QItem x = Q->first->element;
+	qlink q = Q->first;
+	Q->first = q->next;
+	free(q);
+	return x;
+}
+
+
+link mergesort2(link t) {
+	link u;
+	Queue q;
+	for (q = QueueInit(); t; t = u) {
+		u = t->next;
+		t->next = 0;
+		EnterQueue(t, q);
+	}
+	t = DeleteQueue(q);
+	while (!QueueEmpty(q)) {
+		EnterQueue(t, q);
+		t= merge(DeleteQueue(q), DeleteQueue(q));
+	}
+	return t;
+}
+
+//CountSort
+void countsort(int* a,int l,int r) {
+	int b[10] = {0};
+	int cnt[200] = { 0 };
+	for (int i = l; i < r; i++) {
+		cnt[a[i]]++;
+	}
+	for (int i = 1; i < 9; i++) {
+		cnt[i] += cnt[i - 1];
+	}
+	for (int i = r; i >= l; i--) {
+		b[cnt[a[i]]]= a[i];
+		cnt[a[i]]--;
+	}
+	for (int i = l; i <= r; i++)a[i] = b[i - l];
 }

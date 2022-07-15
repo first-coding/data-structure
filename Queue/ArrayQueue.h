@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct aqueue* Queue;
-typedef int QItem;
+//typedef int QItem;
 typedef struct aqueue {
 	int maxsize;
 	int front;

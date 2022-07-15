@@ -57,11 +57,13 @@ void EnterQueue(QItem x, Queue Q) {
 	}
 }
 
-void DeleteQueue(Queue Q) {
-	if (QueueEmpty(Q)) return;
+QItem DeleteQueue(Queue Q) {
+	if (QueueEmpty(Q)) return 0;
+	QItem x = Q->first->element;
 	qlink q = Q->first;
 	Q->first = q->next;
 	free(q);
+	return x;
 }
 
 void QueueItemShow(QItem x) {

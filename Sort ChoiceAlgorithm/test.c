@@ -1,17 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define MAXSIZE 10
-
-
-
+//#include "Sort.h"
+//
+//
 //int main()
 //{
-//    int a[] = { 7,1,5,6,3,8,2,10,9,4 };
-//    int i;
-//    QuickSort(a, 0, MAXSIZE - 1);
-//    for (i = 0; i < MAXSIZE; i++)
-//    {
-//        printf("%5d", a[i]);
-//    }
-//    return 0;
+//	List L = ListInit();
+//	int s[10] = { 10,2,3,88,22,10,30,80,90,20 };
+//	for (int i = 0; i < 10; i++) {
+//		ListInsert(i, s[i],L);
+//	}
+//	PrintList(L);
+//	link c = mergesort2(L->first);
+//	printf("\n");
+//	for (int i = 0; i < 10; i++) {
+//		printf("%d\n", c->element);
+//		c = c->next;
+//	}
+//	return 0;
 //}
