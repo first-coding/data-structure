@@ -465,11 +465,11 @@
     <SFA>
       <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
       <FILENAME>Sort.h</FILENAME>
-      <LINE>398</LINE>
-      <COLUMN>44</COLUMN>
+      <LINE>399</LINE>
+      <COLUMN>16</COLUMN>
     </SFA>
     <DEFECTCODE>6386</DEFECTCODE>
-    <DESCRIPTION>写入到“b”时缓冲区溢出: 可写大小为“sizeof(int)*(unsigned int)(r+1)”个字节，但可能写入了“8”个字节。</DESCRIPTION>
+    <DESCRIPTION>写入到“b”时缓冲区溢出: 可写大小为“40”个字节，但可能写入了“-4”个字节。</DESCRIPTION>
     <FUNCTION>countsort</FUNCTION>
     <DECORATED>countsort</DECORATED>
     <FUNCLINE>389</FUNCLINE>
@@ -483,12 +483,12 @@
         <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
         <FILENAME>Sort.h</FILENAME>
         <LINE>390</LINE>
-        <COLUMN>6</COLUMN>
+        <COLUMN>5</COLUMN>
         <KEYEVENT>
           <ID>1</ID>
           <KIND>declaration</KIND>
           <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“b”是一个 0 字节数组</MESSAGE>
+          <MESSAGE>“b”是一个 10 元素数组(40 字节)</MESSAGE>
         </KEYEVENT>
       </SFA>
       <SFA>
@@ -502,42 +502,6 @@
         <FILENAME>Sort.h</FILENAME>
         <LINE>392</LINE>
         <COLUMN>10</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>393</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>26</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>393</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>26</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
@@ -614,158 +578,13 @@
       <SFA>
         <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
         <FILENAME>Sort.h</FILENAME>
-        <LINE>398</LINE>
-        <COLUMN>44</COLUMN>
+        <LINE>399</LINE>
+        <COLUMN>16</COLUMN>
         <KEYEVENT>
           <ID>3</ID>
           <KIND>usage</KIND>
           <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>写入到“b”无效(位于其可写范围之外)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-      <FILENAME>Sort.h</FILENAME>
-      <LINE>398</LINE>
-      <COLUMN>44</COLUMN>
-    </SFA>
-    <DEFECTCODE>6011</DEFECTCODE>
-    <DESCRIPTION>取消对 NULL 指针“b”的引用。</DESCRIPTION>
-    <FUNCTION>countsort</FUNCTION>
-    <DECORATED>countsort</DECORATED>
-    <FUNCLINE>389</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>390</LINE>
-        <COLUMN>6</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>declaration</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“b”可能为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>391</LINE>
-        <COLUMN>5</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>10</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>393</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>26</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>392</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>395</LINE>
-        <COLUMN>10</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>395</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>396</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>395</LINE>
-        <COLUMN>25</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>395</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>396</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>395</LINE>
-        <COLUMN>25</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>395</LINE>
-        <COLUMN>19</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>398</LINE>
-        <COLUMN>10</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>398</LINE>
-        <COLUMN>19</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>branch</KIND>
-          <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>进入此循环(假定“i&gt;=l”)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Sort ChoiceAlgorithm\</FILEPATH>
-        <FILENAME>Sort.h</FILENAME>
-        <LINE>398</LINE>
-        <COLUMN>44</COLUMN>
-        <KEYEVENT>
-          <ID>3</ID>
-          <KIND>usage</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>已取消对“b”的引用，但可能仍为 NULL</MESSAGE>
+          <MESSAGE>写入到“b[-1]”无效(可写范围是 0 到 9)</MESSAGE>
         </KEYEVENT>
       </SFA>
     </PATH>

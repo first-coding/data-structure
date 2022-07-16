@@ -386,18 +386,21 @@ link mergesort2(link t) {
 }
 
 //CountSort
-void countsort(int* a,int l,int r) {
-	int b[10] = {0};
-	int cnt[200] = { 0 };
-	for (int i = l; i < r; i++) {
-		cnt[a[i]]++;
+
+void countsort(int* arr, int* sorted_arr, int n)
+{
+	int* count_arr = (int*)malloc(sizeof(int) * 100);
+	int i;
+	for (i = 0; i < 100; i++)
+		count_arr[i] = 0;
+	for (i = 0; i < n; i++)
+		count_arr[arr[i]]++;
+	for (i = 1; i < 100; i++)
+		count_arr[i] += count_arr[i - 1];
+	for (i = n; i > 0; i--)
+	{
+		sorted_arr[count_arr[arr[i - 1]] - 1] = arr[i - 1];
+		count_arr[arr[i - 1]]--;
 	}
-	for (int i = 1; i < 9; i++) {
-		cnt[i] += cnt[i - 1];
-	}
-	for (int i = r; i >= l; i--) {
-		b[cnt[a[i]]]= a[i];
-		cnt[a[i]]--;
-	}
-	for (int i = l; i <= r; i++)a[i] = b[i - l];
+	free(count_arr);
 }
