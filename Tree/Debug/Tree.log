@@ -1,2 +1,1 @@
-﻿  TwoTree.c
-D:\Data Structure\Tree\TwoTree.h(102,17): warning C4133: “函数”: 从“void (__cdecl *)(btlink)”到“int (__cdecl *)(btlink)”的类型不兼容
+﻿  Tree.vcxproj -> D:\Data Structure\Tree\Debug\Tree.exe

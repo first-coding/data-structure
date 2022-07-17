@@ -18,9 +18,15 @@
     <ClInclude Include="TwoTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ClueTwoTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TwoTree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClueTwoTree.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
