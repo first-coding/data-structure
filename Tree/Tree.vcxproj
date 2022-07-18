@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClInclude Include="ClueTwoTree.h" />
     <ClInclude Include="TwoTree.h" />
+    <ClInclude Include="TwoTree2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClueTwoTree.c" />
     <ClCompile Include="TwoTree.c" />
+    <ClCompile Include="TwoTree2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -47,15 +47,6 @@ void MakeTree(TreeItem x, BinartTree T, BinartTree L, BinartTree R) {
 	L->root = R->root = 0;
 }
 
-void MakeTree_2(TreeItem x,BinartTree T) {
-	T->root = TreeNewNode();
-	T->root->element = x;
-	T->root->left = TreeNewNode();
-	T->root->right = TreeNewNode();
-	T->root->left->left = T->root->left->right = 0;
-	T->root->right->left = T->root->right->right = 0;
-}
-
 TreeItem BreakTree(BinartTree T, BinartTree L, BinartTree R) {
 	if (!T->root) return 0;
 	TreeItem x = T->root->element;
