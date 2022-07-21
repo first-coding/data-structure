@@ -62,6 +62,19 @@ rootaddr MakeTree(TreeItem x, rootaddr T, rootaddr L,rootaddr R){
 void PreOrder(void(*visit)(Treelink u), Treelink t) {
 	if (t) {
 		(*visit)(t);
+		if (t->left) {
+			t->leftflag = 1;
+		}
+		else {
+			t->leftflag = 0;
+
+		}
+		if (t->right) {
+			t->rightflag = 1;
+		}
+		else {
+			t->rightflag = 0;
+		}
 		PreOrder(visit, t->left);
 		PreOrder(visit, t->right);
 	}
@@ -97,18 +110,4 @@ void InOut(rootaddr T) {
 
 void PostOut(rootaddr T) {
 	PostOrder(outnode, T->root);
-}
-
-void FirstOut(rootaddr T) {
-	Treelink t = T->root;
-	Treelink l = T->root->left;
-	Treelink r = T->root->right;
-	while (t) {
-			TreeItemShow(t->element);
-			Treelink origin = t;
-			t = t->left;
-			if (!t) {
-				
-			}
-	}
 }

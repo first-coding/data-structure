@@ -18,9 +18,6 @@
     <ClInclude Include="TwoTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ClueTwoTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="TwoTree2.h">
       <Filter>头文件</Filter>
     </ClInclude>
