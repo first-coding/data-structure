@@ -62,19 +62,6 @@ rootaddr MakeTree(TreeItem x, rootaddr T, rootaddr L,rootaddr R){
 void PreOrder(void(*visit)(Treelink u), Treelink t) {
 	if (t) {
 		(*visit)(t);
-		if (t->left) {
-			t->leftflag = 1;
-		}
-		else {
-			t->leftflag = 0;
-
-		}
-		if (t->right) {
-			t->rightflag = 1;
-		}
-		else {
-			t->rightflag = 0;
-		}
 		PreOrder(visit, t->left);
 		PreOrder(visit, t->right);
 	}
@@ -110,4 +97,67 @@ void InOut(rootaddr T) {
 
 void PostOut(rootaddr T) {
 	PostOrder(outnode, T->root);
+}
+
+void firstOut(rootaddr T) {
+	Treelink FirstStack[15];
+	int top = -1;
+	Treelink p = T->root;
+	while (p != NULL || top != -1) {
+		if (p != NULL) {
+			FirstStack[++top] = p;
+			printf("%d  ", p->element);
+			p = p->left;
+		}
+		else {
+			p = FirstStack[top--];
+			p = p->right;
+		}
+	}
+}
+
+
+void middleOut(rootaddr T) {
+	Treelink MiddleStacks[15];
+	int top = -1;
+	Treelink p = T->root;
+	while (p != NULL || top != -1) {
+		if (p != NULL) {
+			MiddleStacks[++top] = p;
+			p = p->left;
+		}
+		else {
+			p = MiddleStacks[top--];
+			printf("%d  ", p->element);
+			p = p->right;
+		}
+	}
+}
+
+void lastOut(rootaddr T) {
+	Treelink LastStacks[15];
+	int LastStacksFlag[15];
+	int top = -1;
+	Treelink p = T->root;
+	while (p != NULL || top != -1) {
+		if (p != NULL) {
+			LastStacks[++top] = p;
+			//printf("%d  ", p->element);
+			LastStacksFlag[top] = 1;
+			p = p->left;
+		}
+		else {
+			if (LastStacksFlag[top] == 1) {
+				p = LastStacks[top];
+				//printf("%d  ", p->element);
+				LastStacksFlag[top] = 2;
+				p = p->right;
+			}
+			else {
+				p = LastStacks[top--];
+				printf("%d  ", p->element);
+				p = NULL;
+			}
+		}
+	}
 }

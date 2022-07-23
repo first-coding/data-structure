@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="SearchTree.h" />
     <ClInclude Include="TwoTree.h" />
     <ClInclude Include="TwoTree2.h" />
   </ItemGroup>

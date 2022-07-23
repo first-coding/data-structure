@@ -113,22 +113,20 @@ void InorderTraverse(BiTree* t)
 	}
 }
 
-int main()
-{
-	BiTree* root;
-
-	printf("Input:");
-	root = creat();
-	printf("\n");
-
-	printf("Threading Binary Tree!\n");
-	InThreaded(root);
-	printf("\n");
-
-	printf("Inorder traverse:");
-	InorderTraverse(root);
-	printf("\n");
-
-
-	return 0;
-}
+//int main()
+//{
+//	BiTree* root;
+//
+//	printf("Input:");
+//	root = creat();
+//	printf("\n");
+//
+//	printf("Threading Binary Tree!\n");
+//	InThreaded(root);
+//	printf("\n");
+//
+//	printf("Inorder traverse:");
+//	InorderTraverse(root);
+//	printf("\n");
+//	return 0;
+//}
