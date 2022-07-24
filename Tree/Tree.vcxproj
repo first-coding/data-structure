@@ -144,7 +144,6 @@
     <ClInclude Include="TwoTree2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ClueTwoTree.c" />
     <ClCompile Include="TwoTree.c" />
     <ClCompile Include="TwoTree2.c" />
   </ItemGroup>

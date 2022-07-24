@@ -106,6 +106,18 @@ void firstOut(rootaddr T) {
 	while (p != NULL || top != -1) {
 		if (p != NULL) {
 			FirstStack[++top] = p;
+			if (p->left != NULL) {
+				p->leftflag = 1;
+			}
+			else {
+				p->leftflag = 0;
+			}
+			if (p->right != NULL) {
+				p->rightflag = 1;
+			}
+			else {
+				p->rightflag = 0;
+			}
 			printf("%d  ", p->element);
 			p = p->left;
 		}

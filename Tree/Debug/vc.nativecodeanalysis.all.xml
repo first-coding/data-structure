@@ -1,44 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
     <SFA>
       <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-      <FILENAME>TwoTree2.h</FILENAME>
-      <LINE>31</LINE>
+      <FILENAME>ClueTwoTree.c</FILENAME>
+      <LINE>20</LINE>
       <COLUMN>9</COLUMN>
     </SFA>
-    <DEFECTCODE>6011</DEFECTCODE>
-    <DESCRIPTION>取消对 NULL 指针“T”的引用。</DESCRIPTION>
-    <FUNCTION>TreeInit</FUNCTION>
-    <DECORATED>TreeInit</DECORATED>
-    <FUNCLINE>29</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>TwoTree2.h</FILENAME>
-        <LINE>30</LINE>
-        <COLUMN>10</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>declaration</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“T”可能为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>TwoTree2.h</FILENAME>
-        <LINE>31</LINE>
-        <COLUMN>9</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>usage</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>已取消对“T”的引用，但可能仍为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “scanf”。</DESCRIPTION>
+    <FUNCTION>CreateTree</FUNCTION>
+    <DECORATED>CreateTree</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
   </DEFECT></DEFECTS>

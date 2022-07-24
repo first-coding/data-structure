@@ -29,9 +29,6 @@
     <ClCompile Include="TwoTree.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ClueTwoTree.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="TwoTree2.c">
       <Filter>源文件</Filter>
     </ClCompile>

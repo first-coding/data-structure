@@ -5,81 +5,13 @@
       <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
       <FILENAME>ClueTwoTree.c</FILENAME>
       <LINE>20</LINE>
-      <COLUMN>6</COLUMN>
+      <COLUMN>9</COLUMN>
     </SFA>
     <DEFECTCODE>6031</DEFECTCODE>
     <DESCRIPTION>返回值被忽略: “scanf”。</DESCRIPTION>
-    <FUNCTION>creat</FUNCTION>
-    <DECORATED>creat</DECORATED>
-    <FUNCLINE>15</FUNCLINE>
+    <FUNCTION>CreateTree</FUNCTION>
+    <DECORATED>CreateTree</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
     <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-      <FILENAME>ClueTwoTree.c</FILENAME>
-      <LINE>29</LINE>
-      <COLUMN>10</COLUMN>
-    </SFA>
-    <DEFECTCODE>6011</DEFECTCODE>
-    <DESCRIPTION>取消对 NULL 指针“t”的引用。</DESCRIPTION>
-    <FUNCTION>creat</FUNCTION>
-    <DECORATED>creat</DECORATED>
-    <FUNCLINE>15</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>ClueTwoTree.c</FILENAME>
-        <LINE>17</LINE>
-        <COLUMN>10</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>ClueTwoTree.c</FILENAME>
-        <LINE>18</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>ClueTwoTree.c</FILENAME>
-        <LINE>20</LINE>
-        <COLUMN>6</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>ClueTwoTree.c</FILENAME>
-        <LINE>22</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>ClueTwoTree.c</FILENAME>
-        <LINE>28</LINE>
-        <COLUMN>4</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>declaration</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“t”可能为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Tree\</FILEPATH>
-        <FILENAME>ClueTwoTree.c</FILENAME>
-        <LINE>29</LINE>
-        <COLUMN>10</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>usage</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>已取消对“t”的引用，但可能仍为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
   </DEFECT>
 </DEFECTS>
