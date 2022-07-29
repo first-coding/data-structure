@@ -16,6 +16,7 @@ typedef struct btnode {
 	btlink right;
 	btlink parent;
 }Btnode;
+
 typedef struct bstree* BinartTree;
 typedef struct bstree {
 	btlink root;
