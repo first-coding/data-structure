@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\set\</FILEPATH>
+      <FILENAME>BitVector.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“S”的引用。</DESCRIPTION>
+    <FUNCTION>SetInit</FUNCTION>
+    <DECORATED>SetInit</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>13</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“S”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“S”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\set\</FILEPATH>
+      <FILENAME>BitVector.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“S-&gt;v”的引用。</DESCRIPTION>
+    <FUNCTION>SetInit</FUNCTION>
+    <DECORATED>SetInit</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>13</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>15</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>16</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“S-&gt;v”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>17</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>17</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;size”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\set\</FILEPATH>
+        <FILENAME>BitVector.h</FILENAME>
+        <LINE>18</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“S-&gt;v”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT></DEFECTS>
