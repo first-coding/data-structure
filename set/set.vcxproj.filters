@@ -18,9 +18,15 @@
     <ClInclude Include="BitVector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ListVector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitVector.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListVector.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
