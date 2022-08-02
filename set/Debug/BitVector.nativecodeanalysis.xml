@@ -48,7 +48,7 @@
     <SFA>
       <FILEPATH>D:\Data Structure\set\</FILEPATH>
       <FILENAME>BitVector.h</FILENAME>
-      <LINE>18</LINE>
+      <LINE>19</LINE>
       <COLUMN>10</COLUMN>
     </SFA>
     <DEFECTCODE>6011</DEFECTCODE>
@@ -83,7 +83,7 @@
       <SFA>
         <FILEPATH>D:\Data Structure\set\</FILEPATH>
         <FILENAME>BitVector.h</FILENAME>
-        <LINE>16</LINE>
+        <LINE>17</LINE>
         <COLUMN>6</COLUMN>
         <KEYEVENT>
           <ID>1</ID>
@@ -95,25 +95,25 @@
       <SFA>
         <FILEPATH>D:\Data Structure\set\</FILEPATH>
         <FILENAME>BitVector.h</FILENAME>
-        <LINE>17</LINE>
+        <LINE>18</LINE>
         <COLUMN>10</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\set\</FILEPATH>
         <FILENAME>BitVector.h</FILENAME>
-        <LINE>17</LINE>
+        <LINE>18</LINE>
         <COLUMN>19</COLUMN>
         <KEYEVENT>
           <ID>2</ID>
           <KIND>branch</KIND>
           <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>进入此循环(假定“i&lt;size”)</MESSAGE>
+          <MESSAGE>进入此循环(假定“i&lt;S-&gt;arraysize”)</MESSAGE>
         </KEYEVENT>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\set\</FILEPATH>
         <FILENAME>BitVector.h</FILENAME>
-        <LINE>18</LINE>
+        <LINE>19</LINE>
         <COLUMN>10</COLUMN>
         <KEYEVENT>
           <ID>3</ID>
