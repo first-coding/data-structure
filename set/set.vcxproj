@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="BitVector.h" />
     <ClInclude Include="ListVector.h" />
+    <ClInclude Include="OpenHash.h" />
+    <ClInclude Include="SymbolTable.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitVector.c" />

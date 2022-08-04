@@ -21,6 +21,12 @@
     <ClInclude Include="ListVector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SymbolTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenHash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitVector.c">

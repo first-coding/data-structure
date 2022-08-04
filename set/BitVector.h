@@ -13,7 +13,6 @@ Set SetInit(int size) {
 	Set S = (Set)malloc(sizeof * S);
 	S->setsize = size;
 	S->arraysize = (size + 15) >> 5;
-	//S->v = (unsigned short*)malloc(20*sizeof(unsigned short));
 	S->v = (unsigned short*)malloc(20 * sizeof(unsigned short));
 	for (int i = 0; i < S->arraysize; i++) { 
 		S->v[i] = 0;
@@ -86,14 +85,6 @@ void SetInsert(int x, Set S) {
 	S->v[ArrayIndex(x)] |= BitMask(x);
 }	
 
-//void Insert(int x, int element, Set S) {
-//	if (x > S->setsize) {
-//		return;
-//	}
-//	else {
-//		S->v[x] = element;
-//	}
-//}
 
 void SetDelete(int x, Set S) {
 	if (x < 0 || x >= S->setsize) return;
