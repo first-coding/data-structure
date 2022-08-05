@@ -1,4 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
     <SFA>
       <FILEPATH>D:\Data Structure\set\</FILEPATH>
       <FILENAME>OpenHash.c</FILENAME>
@@ -77,4 +79,5 @@
         </KEYEVENT>
       </SFA>
     </PATH>
-  </DEFECT></DEFECTS>
+  </DEFECT>
+</DEFECTS>

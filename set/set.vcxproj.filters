@@ -35,5 +35,8 @@
     <ClCompile Include="ListVector.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="OpenHash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

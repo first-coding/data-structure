@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="BitVector.c" />
     <ClCompile Include="ListVector.c" />
+    <ClCompile Include="OpenHash.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
