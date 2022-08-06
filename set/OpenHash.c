@@ -27,7 +27,6 @@ int hashFun(int key);
 Status initHashTable(HashTable *hash)
 {
 	int i;
-
 	m = HASHSIZE;
 	hash->count = m;
 	hash->elem = (int *)malloc(m*sizeof(int));
@@ -99,6 +98,5 @@ int main()
 		printf("查找 %d 的哈希地址为：%d \n", key, addr);
 	}
 	printf("\n");
-
 	return 0;
 }
