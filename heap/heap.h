@@ -46,6 +46,12 @@ SetItem DeleteMin(Heap H) {
 	return x;
 }
 
+void test(SetItem a[]) {
+	for (int i = 0; i < 10; i++) {
+		printf("%d", a[i]);
+	}
+}
+
 Heap BuildHeap(SetItem a[], int size, int arraysize) {
 	Heap H = MinHeapInit(arraysize);
 	H->heap = a;
