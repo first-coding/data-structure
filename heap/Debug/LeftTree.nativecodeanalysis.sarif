@@ -1,0 +1,279 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“p”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 2,
+                  "endLine": 24,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NewHBLTnode",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "“p”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“p”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“H”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 2,
+                  "endLine": 34,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "HBLTInit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“H”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                          },
+                          "region": {
+                            "startLine": 34,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“H”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“Q”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 2,
+                  "endLine": 102,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "QueueInit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                          },
+                          "region": {
+                            "startLine": 101,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“Q”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+                          },
+                          "region": {
+                            "startLine": 102,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“Q”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30146.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00BCD1C0 -il C:\\Users\\master\\AppData\\Local\\Temp\\_CL_3a2f49baast -typedil -f LeftTree.c -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930146 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -FoDebug\\LeftTree.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory D:\\Data Structure\\heap -analyze:rulesetdirectory ;D:\\project\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\project\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\include -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I D:\\project\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\include -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I D:\\project\\VC\\Auxiliary\\VS\\include -I D:\\project\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Data Structure/heap/LeftTree.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "0c3a69f8f6441e808241073e46e31f2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/data structure/heap/lefttree.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "d65d42f669933851f1ee552f3a634a7e"
+          }
+        }
+      ]
+    }
+  ]
+}

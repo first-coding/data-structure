@@ -26,5 +26,8 @@
     <ClCompile Include="heap.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeftTree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
