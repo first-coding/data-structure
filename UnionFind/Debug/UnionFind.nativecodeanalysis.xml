@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+      <FILENAME>UnionFind.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“U-&gt;components”的引用。</DESCRIPTION>
+    <FUNCTION>UFinit</FUNCTION>
+    <DECORATED>UFinit</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+        <FILENAME>UnionFind.h</FILENAME>
+        <LINE>12</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+        <FILENAME>UnionFind.h</FILENAME>
+        <LINE>13</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+        <FILENAME>UnionFind.h</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“U-&gt;components”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+        <FILENAME>UnionFind.h</FILENAME>
+        <LINE>15</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+        <FILENAME>UnionFind.h</FILENAME>
+        <LINE>15</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“e&lt;=size”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
+        <FILENAME>UnionFind.h</FILENAME>
+        <LINE>16</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“U-&gt;components”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

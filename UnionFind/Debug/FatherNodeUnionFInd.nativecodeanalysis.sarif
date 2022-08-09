@@ -1,0 +1,709 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“U”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "UFinit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“U”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“U”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入到“U->parent”时缓冲区溢出: 可写大小为“(unsigned int)(size+1)*sizeof(int)”个字节，但可能写入了“8”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 3,
+                  "endLine": 16,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "UFinit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“e”等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“e<=size”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“U->parent”无效(位于其可写范围之外)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“U->parent”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 3,
+                  "endLine": 16,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "UFinit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "“U->parent”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“e<=size”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“U->parent”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入到“U->root”时缓冲区溢出: 可写大小为“(unsigned int)(size+1)*sizeof(int)”个字节，但可能写入了“8”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 3,
+                  "endLine": 17,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "UFinit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“e”等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“e<=size”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“U->root”无效(位于其可写范围之外)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“U->root”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 3,
+                  "endLine": 17,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "UFinit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“U->root”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“e<=size”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“U->root”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30146.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x002CD1C0 -il C:\\Users\\master\\AppData\\Local\\Temp\\_CL_7cfce1dbast -typedil -f FatherNodeUnionFInd.c -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930146 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -FoDebug\\FatherNodeUnionFInd.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory D:\\Data Structure\\UnionFind -analyze:rulesetdirectory ;D:\\project\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\project\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\include -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I D:\\project\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\include -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I D:\\project\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I D:\\project\\VC\\Auxiliary\\VS\\include -I D:\\project\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Data Structure/UnionFind/FatherNodeUnionFind2.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "57a0793a58966edcf5b63fd90cb48494"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/data structure/unionfind/fathernodeunionfind.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "10f9eb4f77a41f3ab28574f2ed9d102b"
+          }
+        }
+      ]
+    }
+  ]
+}
