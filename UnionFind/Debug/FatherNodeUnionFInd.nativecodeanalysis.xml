@@ -3,15 +3,15 @@
   <DEFECT>
     <SFA>
       <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-      <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-      <LINE>13</LINE>
+      <FILENAME>FatherNodeUnionFind.h</FILENAME>
+      <LINE>12</LINE>
       <COLUMN>11</COLUMN>
     </SFA>
     <DEFECTCODE>6011</DEFECTCODE>
     <DESCRIPTION>取消对 NULL 指针“U”的引用。</DESCRIPTION>
     <FUNCTION>UFinit</FUNCTION>
     <DECORATED>UFinit</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
+    <FUNCLINE>10</FUNCLINE>
     <PROBABILITY>1</PROBABILITY>
     <RANK>4</RANK>
     <CATEGORY>
@@ -20,8 +20,8 @@
     <PATH>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>12</LINE>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>11</LINE>
         <COLUMN>7</COLUMN>
         <KEYEVENT>
           <ID>1</ID>
@@ -32,8 +32,8 @@
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>13</LINE>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>12</LINE>
         <COLUMN>11</COLUMN>
         <KEYEVENT>
           <ID>2</ID>
@@ -47,89 +47,15 @@
   <DEFECT>
     <SFA>
       <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-      <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-      <LINE>16</LINE>
-      <COLUMN>15</COLUMN>
-    </SFA>
-    <DEFECTCODE>6386</DEFECTCODE>
-    <DESCRIPTION>写入到“U-&gt;parent”时缓冲区溢出: 可写大小为“(unsigned int)(size+1)*sizeof(int)”个字节，但可能写入了“8”个字节。</DESCRIPTION>
-    <FUNCTION>UFinit</FUNCTION>
-    <DECORATED>UFinit</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>12</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>13</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>14</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
-        <COLUMN>10</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>declaration</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“e”等于 1</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
-        <COLUMN>19</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>branch</KIND>
-          <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>进入此循环(假定“e&lt;=size”)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>16</LINE>
-        <COLUMN>15</COLUMN>
-        <KEYEVENT>
-          <ID>3</ID>
-          <KIND>usage</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>写入到“U-&gt;parent”无效(位于其可写范围之外)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-      <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-      <LINE>16</LINE>
-      <COLUMN>15</COLUMN>
+      <FILENAME>FatherNodeUnionFind.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>17</COLUMN>
     </SFA>
     <DEFECTCODE>6011</DEFECTCODE>
     <DESCRIPTION>取消对 NULL 指针“U-&gt;parent”的引用。</DESCRIPTION>
     <FUNCTION>UFinit</FUNCTION>
     <DECORATED>UFinit</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
+    <FUNCLINE>10</FUNCLINE>
     <PROBABILITY>1</PROBABILITY>
     <RANK>4</RANK>
     <CATEGORY>
@@ -138,14 +64,14 @@
     <PATH>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>12</LINE>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>11</LINE>
         <COLUMN>7</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>13</LINE>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>12</LINE>
         <COLUMN>11</COLUMN>
         <KEYEVENT>
           <ID>1</ID>
@@ -156,20 +82,14 @@
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>14</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>13</LINE>
         <COLUMN>10</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>13</LINE>
         <COLUMN>19</COLUMN>
         <KEYEVENT>
           <ID>2</ID>
@@ -180,174 +100,14 @@
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>16</LINE>
-        <COLUMN>15</COLUMN>
+        <FILENAME>FatherNodeUnionFind.h</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>17</COLUMN>
         <KEYEVENT>
           <ID>3</ID>
           <KIND>usage</KIND>
           <IMPORTANCE>Essential</IMPORTANCE>
           <MESSAGE>已取消对“U-&gt;parent”的引用，但可能仍为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-      <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-      <LINE>17</LINE>
-      <COLUMN>13</COLUMN>
-    </SFA>
-    <DEFECTCODE>6386</DEFECTCODE>
-    <DESCRIPTION>写入到“U-&gt;root”时缓冲区溢出: 可写大小为“(unsigned int)(size+1)*sizeof(int)”个字节，但可能写入了“8”个字节。</DESCRIPTION>
-    <FUNCTION>UFinit</FUNCTION>
-    <DECORATED>UFinit</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>12</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>13</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>14</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
-        <COLUMN>10</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>declaration</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“e”等于 1</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
-        <COLUMN>19</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>branch</KIND>
-          <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>进入此循环(假定“e&lt;=size”)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>16</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>17</LINE>
-        <COLUMN>13</COLUMN>
-        <KEYEVENT>
-          <ID>3</ID>
-          <KIND>usage</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>写入到“U-&gt;root”无效(位于其可写范围之外)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-      <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-      <LINE>17</LINE>
-      <COLUMN>13</COLUMN>
-    </SFA>
-    <DEFECTCODE>6011</DEFECTCODE>
-    <DESCRIPTION>取消对 NULL 指针“U-&gt;root”的引用。</DESCRIPTION>
-    <FUNCTION>UFinit</FUNCTION>
-    <DECORATED>UFinit</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>12</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>13</LINE>
-        <COLUMN>11</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>14</LINE>
-        <COLUMN>9</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>declaration</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“U-&gt;root”可能为 NULL</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
-        <COLUMN>10</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>15</LINE>
-        <COLUMN>19</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>branch</KIND>
-          <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>进入此循环(假定“e&lt;=size”)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>16</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\UnionFind\</FILEPATH>
-        <FILENAME>FatherNodeUnionFind2.h</FILENAME>
-        <LINE>17</LINE>
-        <COLUMN>13</COLUMN>
-        <KEYEVENT>
-          <ID>3</ID>
-          <KIND>usage</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>已取消对“U-&gt;root”的引用，但可能仍为 NULL</MESSAGE>
         </KEYEVENT>
       </SFA>
     </PATH>
