@@ -16,7 +16,7 @@ UFset UFinit(int size) {
 	return U;
 }
 
-int UFfind(int e, UFset U) {
+int UFfind(int e, UFset U) { 
 	printf("%d\n",U->parent[2]);
 	while (U->parent[e]) {
 		e = U->parent[e];
@@ -28,3 +28,4 @@ int UFunion(int i, int j, UFset U) {
 	U->parent[j] = i;
 	return i;
 }
+
