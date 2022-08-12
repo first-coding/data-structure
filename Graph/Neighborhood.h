@@ -65,7 +65,7 @@ void GraphAdd(int i, int j, Graph G) {
 	G->e++;
 }
 
-void GraphDelete(int i, int j, Graph G) {
+void GraphDelete(int i, int j, Graph G) {//删除边
 	glink p, q;
 	if (i<1 || j<1 || i>G->n || j>G->n || !GraphExist(i, j, G)) return;
 	p = G->adj[i];
@@ -86,7 +86,7 @@ void GraphDelete(int i, int j, Graph G) {
 	G->e--;
 }
 
-int OutDegree(int i, Graph G) {
+int OutDegree(int i, Graph G) {//出度
 	int j = 0;
 	if (i<1 || i>G->n) return 1;
 	glink p = G->adj[i];
@@ -97,7 +97,7 @@ int OutDegree(int i, Graph G) {
 	return j;
 }
 
-int InDegree(int i, Graph G) {
+int InDegree(int i, Graph G) {//入度
 	int sum = 0;
 	if (i<1 || i>G->n) return 1;
 	for (int j = 1; j <= G->n; j++) {
