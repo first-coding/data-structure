@@ -18,5 +18,13 @@
     <ClInclude Include="Neighborhood.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Neighborhood2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Neighborhood2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
