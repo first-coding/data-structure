@@ -15,6 +15,7 @@ Graph GraphInit(int n, int noEdge)
 {
 	Graph G = (Graph)malloc(sizeof(AWDgraph));
 	if (G) {
+
 		G->n = n;
 		G->e = 0;
 		G->NoEdge = noEdge;

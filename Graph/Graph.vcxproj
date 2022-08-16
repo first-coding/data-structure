@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="Neighborhood.h" />
     <ClInclude Include="Neighborhood2.h" />
+    <ClInclude Include="Neighborhood3.h" />
+    <ClInclude Include="WeightedDiagraph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Neighborhood2.c" />
