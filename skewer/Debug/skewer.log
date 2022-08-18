@@ -1,0 +1,6 @@
+﻿  skewer.c
+D:\Data Structure\skewer\skewer.h(27,11): warning C4018: “<”: 有符号/无符号不匹配
+D:\Data Structure\skewer\skewer.h(44,11): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Data Structure\skewer\skewer.h(44,29): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Data Structure\skewer\skewer.h(53,8): warning C4018: “>”: 有符号/无符号不匹配
+  skewer.vcxproj -> D:\Data Structure\skewer\Debug\skewer.exe
