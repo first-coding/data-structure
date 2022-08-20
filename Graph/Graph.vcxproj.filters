@@ -32,5 +32,14 @@
     <ClCompile Include="Neighborhood2.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="all.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PointGraph.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

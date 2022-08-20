@@ -145,7 +145,10 @@
     <ClInclude Include="WeightedDiagraph.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="all.c" />
     <ClCompile Include="Neighborhood2.c" />
+    <ClCompile Include="PointGraph.c" />
+    <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
