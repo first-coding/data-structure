@@ -4,14 +4,14 @@
     <SFA>
       <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
       <FILENAME>PointGraph.c</FILENAME>
-      <LINE>50</LINE>
+      <LINE>42</LINE>
       <COLUMN>12</COLUMN>
     </SFA>
     <DEFECTCODE>6011</DEFECTCODE>
     <DESCRIPTION>取消对 NULL 指针“s”的引用。</DESCRIPTION>
     <FUNCTION>CreatMGraph</FUNCTION>
     <DECORATED>CreatMGraph</DECORATED>
-    <FUNCLINE>31</FUNCLINE>
+    <FUNCLINE>24</FUNCLINE>
     <PROBABILITY>1</PROBABILITY>
     <RANK>4</RANK>
     <CATEGORY>
@@ -21,109 +21,103 @@
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>33</LINE>
+        <LINE>26</LINE>
         <COLUMN>5</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>33</LINE>
+        <LINE>26</LINE>
         <COLUMN>8</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>33</LINE>
+        <LINE>26</LINE>
         <COLUMN>11</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>34</LINE>
+        <LINE>27</LINE>
         <COLUMN>10</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>35</LINE>
+        <LINE>28</LINE>
         <COLUMN>6</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
+        <LINE>29</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>PointGraph.c</FILENAME>
+        <LINE>29</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>PointGraph.c</FILENAME>
+        <LINE>32</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>PointGraph.c</FILENAME>
+        <LINE>32</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>PointGraph.c</FILENAME>
+        <LINE>35</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>PointGraph.c</FILENAME>
+        <LINE>35</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>PointGraph.c</FILENAME>
         <LINE>36</LINE>
-        <COLUMN>8</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>37</LINE>
-        <COLUMN>8</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>37</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>40</LINE>
-        <COLUMN>8</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>40</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>43</LINE>
-        <COLUMN>8</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>43</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
-        <FILENAME>PointGraph.c</FILENAME>
-        <LINE>44</LINE>
         <COLUMN>7</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>45</LINE>
+        <LINE>37</LINE>
         <COLUMN>4</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>46</LINE>
+        <LINE>38</LINE>
         <COLUMN>12</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>47</LINE>
+        <LINE>39</LINE>
         <COLUMN>13</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>48</LINE>
+        <LINE>40</LINE>
         <COLUMN>26</COLUMN>
       </SFA>
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>49</LINE>
+        <LINE>41</LINE>
         <COLUMN>4</COLUMN>
         <KEYEVENT>
           <ID>1</ID>
@@ -135,7 +129,7 @@
       <SFA>
         <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
         <FILENAME>PointGraph.c</FILENAME>
-        <LINE>50</LINE>
+        <LINE>42</LINE>
         <COLUMN>12</COLUMN>
         <KEYEVENT>
           <ID>2</ID>

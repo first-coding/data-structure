@@ -141,14 +141,14 @@
   <ItemGroup>
     <ClInclude Include="Neighborhood.h" />
     <ClInclude Include="Neighborhood2.h" />
-    <ClInclude Include="Neighborhood3.h" />
+    <ClInclude Include="prefect.h" />
     <ClInclude Include="WeightedDiagraph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="all.c" />
     <ClCompile Include="Neighborhood2.c" />
     <ClCompile Include="PointGraph.c" />
-    <ClCompile Include="test.c" />
+    <ClCompile Include="prefect.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

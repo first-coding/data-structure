@@ -21,10 +21,10 @@
     <ClInclude Include="Neighborhood2.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Neighborhood3.h">
+    <ClInclude Include="WeightedDiagraph.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="WeightedDiagraph.h">
+    <ClInclude Include="prefect.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,13 +32,13 @@
     <ClCompile Include="Neighborhood2.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="all.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="PointGraph.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="prefect.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
