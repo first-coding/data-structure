@@ -1,2 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DEFECTS></DEFECTS>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+      <FILENAME>prefect.h</FILENAME>
+      <LINE>166</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>使用未初始化的内存“Q”。</DESCRIPTION>
+    <FUNCTION>BFS</FUNCTION>
+    <DECORATED>BFS</DECORATED>
+    <FUNCLINE>160</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>161</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>161</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>162</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>未初始化“Q”</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>163</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>163</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;G.TopNums”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>164</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>165</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>166</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“Q”是“EnQueue”的输入/输出参数(在第 127 行中声明)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Data Structure\Graph\</FILEPATH>
+        <FILENAME>prefect.h</FILENAME>
+        <LINE>166</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已使用“Q”，但可能尚未将其初始化</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

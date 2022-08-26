@@ -6,5 +6,6 @@ int main() {
 	printf("\n");
 	OutPut(&G);
 	DFStraverse(G);
+	BFS(G);
 	return 0;
 }

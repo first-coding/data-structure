@@ -13,6 +13,8 @@ typedef int EdgeType;
 #define TRUE 1
 #define FALSE 0
 typedef int Boole;
+typedef int QElemType;
+typedef int Status;
 Boole visited[MAX];  
 
 typedef struct graph {
@@ -20,6 +22,16 @@ typedef struct graph {
 	EdgeType arcs[MAX][MAX];
 	int TopNums, SideNums;
 }Graph;
+
+typedef struct QNode {
+	QElemType data;
+	struct QNode* next;
+}QNode, * Queueptr;
+
+typedef struct {
+	Queueptr front, rear;
+}LinkQueue;
+
 
 int* NodeIndex(Graph *G, VertexType NodeChar,VertexType NodeChar_2) {
 	int L[2] = {0};
@@ -103,3 +115,65 @@ void DFStraverse(Graph G) {
 	}
 }
 
+Status InitQueue(LinkQueue Q) {
+	Q.front = Q.rear = (Queueptr)malloc(sizeof(QNode));
+	if (!Q.front) {
+		exit(0);
+	}
+	Q.front->next = NULL;
+	return 1;
+}
+
+Status EnQueue(LinkQueue Q, int i) {
+	Queueptr s;
+	s = (Queueptr)malloc(sizeof(QNode));
+	if (!s)
+		exit(0);
+	s->data = i;
+	s->next = NULL;
+	Q.rear->next = s;
+	Q.rear = s;
+	return 1;
+}
+
+Status QueueEmpty(LinkQueue Q) {
+	if (Q.front->next == NULL)
+		return 0;
+	else
+		return 1;
+}
+
+Status DeQueue(LinkQueue* Q, int* i) {
+	Queueptr p;
+	if (Q->front == Q->rear)
+		return 0;
+	p = Q->front->next;
+
+	*i = p->data;
+	Q->front->next = p->next;
+	if (p == Q->rear)
+		Q->rear = Q->front;
+	free(p);
+	return 1;
+}
+
+void BFS(Graph G) {
+	int i, j;
+	LinkQueue Q = (LinkQueue*)malloc(sizeof(LinkQueue));
+	for (i = 0; i < G.TopNums; i++) {
+		visited[i] = FALSE;
+		printf("%c->", G.vexs[i]);
+		EnQueue(Q, i);
+		while (!QueueEmpty(Q))
+		{
+			DeQueue(&Q, &i);
+			for (j = 0; j < G.TopNums; j++) {
+				if (G.arcs[i][j] == 1 && !visited[j]) {
+					visited[j] = TRUE;
+					printf("%c", G.vexs[j]);
+					EnQueue(Q, j);
+				}
+			}
+		}
+	}
+}
