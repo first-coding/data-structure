@@ -1,2 +1,2 @@
 ﻿  prefect.c
-D:\Data Structure\Graph\prefect.h(166): error C4700: 使用了未初始化的局部变量“Q”
+  Graph.vcxproj -> D:\Data Structure\Graph\Debug\Graph.exe
