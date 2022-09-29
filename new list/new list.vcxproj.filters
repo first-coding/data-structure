@@ -21,12 +21,18 @@
     <ClCompile Include="PointList.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LoopList.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrange.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="PointList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LoopList.c" />
     <ClCompile Include="PointList.c" />
     <ClCompile Include="源.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrange.h" />
+    <ClInclude Include="LoopList.h" />
     <ClInclude Include="PointList.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

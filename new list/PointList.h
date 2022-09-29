@@ -40,7 +40,7 @@ int CleanList(hlist L) {
 }
 
 int ListLength(hlist L) {
-	int counts = 0;
+	int counts = 1;
 	list p = L->head;
 	while (p) {
 		counts++;
