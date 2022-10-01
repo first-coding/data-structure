@@ -49,6 +49,7 @@ int ListLength(hlist L) {
 	return counts;
 }
 
+
 void GetElem(hlist L, int i, ElemType* e) {
 	if (1 > i && i>ListLength(L)) {
 		return ;
