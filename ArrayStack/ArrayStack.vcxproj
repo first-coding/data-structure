@@ -140,9 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="PointStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrayStack.c" />
+    <ClCompile Include="PointStack.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -16,7 +16,7 @@ typedef struct astack {
 stackpoint StackInit() {
 	stackpoint s = (stackpoint)malloc(sizeof(Astack));
 	if (s) {
-		s->stacksize = MAXSIZE;
+		s->stacksize = 0;
 		s->bottom = (SEleType*)malloc(sizeof(SEleType)*MAXSIZE);
 		s->top = s->bottom;
 	}
@@ -24,14 +24,17 @@ stackpoint StackInit() {
 }
 
 int Push(SEleType x, stackpoint s) {
-	if (s->top - s->bottom == s->stacksize)return ERROR;
+	if (s->top - s->bottom == MAXSIZE)return ERROR;
 	*s->top++ = x;
+	s->stacksize++;
 	return SUCCESS;
 }
 
 int Pop(stackpoint s,SEleType *e) {
 	if (s->bottom == s->top)return ERROR;
-	*e = *--s->top;
+	s->top = s->top--;
+	*e = *s->top;
+	s->stacksize--;
 	return SUCCESS;
 }
 
@@ -40,12 +43,13 @@ int GetElem(stackpoint s) {
 }
 
 int LengthStack(stackpoint s) {
-	int counts = 1;
-	SEleType* p = s->bottom;
-	while (p != -842150) {
-		p = p++;
+	return s->stacksize;
+}
+
+void StackTravels(stackpoint s) {
+	for (int i = 0; i < LengthStack(s); i++) {
+		printf("%3d", s->bottom[i]);
 	}
-	return 0;
 }
 
 
