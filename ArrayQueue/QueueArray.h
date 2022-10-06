@@ -25,7 +25,7 @@ int QueueEmpty(queuepoint q) {
 }
 
 int QueueLength(queuepoint q) {
-	return (q->rear - q->front)+1;
+	return (q->rear - q->front);
 }
 
 QEletype FrontElem(queuepoint q) {
@@ -33,17 +33,20 @@ QEletype FrontElem(queuepoint q) {
 }
 
 void InsertQueue(queuepoint q,QEletype x) {
-	q->base[++q->rear] = x;
+	q->base[q->rear] = x;
 	q->rear++;
 }
 
 void DeleteQueue(queuepoint q) {
+	q->base[q->front] = 0;
 	q->front++;
 }
 
 void TravelQuque(queuepoint q) {
 	int length = QueueLength(q);
+	int j = q->front;
 	for (int i = 0; i < length; i++) {
-		printf("%3d", q->base[i]);
+		printf("%3d", q->base[j]);
+		j++;
 	}
 }

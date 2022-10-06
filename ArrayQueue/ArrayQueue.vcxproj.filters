@@ -18,5 +18,13 @@
     <ClInclude Include="QueueArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LoopQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QueueArray.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
