@@ -140,9 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="LoopQueue.h" />
+    <ClInclude Include="PointArray.h" />
     <ClInclude Include="QueueArray.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LoopQueue.c" />
+    <ClCompile Include="PointQueue.c" />
     <ClCompile Include="QueueArray.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

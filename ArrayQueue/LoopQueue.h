@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define QueueElem int
-#define MAXSIZE 100
+#define MAXSIZE 6
 
 typedef struct loopqueue* LoopPoint;
 typedef struct loopqueue {
@@ -40,8 +40,8 @@ QueueElem FrontLoop(LoopPoint Q) {
 }
 
 void LoopInsert(LoopPoint Q,QueueElem x) {
-	Q->base[Q->rear] = x;
-	Q->rear = (Q->rear + 1) % MAXSIZE;
+		Q->base[Q->rear] = x;
+		Q->rear = (Q->rear + 1) % MAXSIZE;
 }
 
 void LoopDelete(LoopPoint Q) {

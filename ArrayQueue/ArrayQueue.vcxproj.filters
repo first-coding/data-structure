@@ -21,9 +21,18 @@
     <ClInclude Include="LoopQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="PointArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="QueueArray.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopQueue.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PointQueue.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
