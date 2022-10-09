@@ -142,6 +142,7 @@
     <ClInclude Include="String.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Kmp.c" />
     <ClCompile Include="String.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

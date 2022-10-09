@@ -1,3 +1,8 @@
-﻿  String.c
-D:\Data Structure\String\String.c(6,6): warning C4013: “gets”未定义；假设外部返回 int
+﻿  Kmp.c
+D:\Data Structure\String\Kmp.c(7,14): warning C4018: “<”: 有符号/无符号不匹配
+D:\Data Structure\String\Kmp.c(23,14): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Data Structure\String\Kmp.c(23,32): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Data Structure\String\Kmp.c(33,11): warning C4018: “>”: 有符号/无符号不匹配
+  String.c
+  正在生成代码...
   String.vcxproj -> D:\Data Structure\String\Debug\String.exe

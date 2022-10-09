@@ -1,6 +1,7 @@
 #pragma once
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 typedef struct string* Pstring;
 typedef struct string {
@@ -44,3 +45,5 @@ int Index_BF(Pstring S1, Pstring S2, int pos) {
 	if (++j > S2->length) return i - S2->length;
 	else return -1;
 }
+
+
