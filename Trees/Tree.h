@@ -36,19 +36,21 @@ Hpoint InitTree() {
 	return t;
 }
 
+void CreateTree(Hpoint t,TreeElem data,int flag) {
+	Tpoint News = NewNode();
+	News->data = data;
+	News->left = News->right = NULL;
+	if (t->root == NULL) {
+		t->root = News;
+	}
+	else {
+		if (flag == 0) {
+			 
+		}
+		else {
 
-void DestroyTree(Hpoint t) {
-	
-}
-
-void CreateTree(Tpoint t,TreeElem leftdata,TreeElem rightdata) {
-	Tpoint left = NewNode();
-	left->data = leftdata;
-	Tpoint right = NewNode();
-	right->data = rightdata;
-	left->left = left->right = right->left = right->right = NULL;
-	t->left = left;
-	t->right = right;
+		}
+	}
 }
 
 

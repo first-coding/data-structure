@@ -3,7 +3,7 @@
 int main() {
 	Hpoint t = InitTree();
 	Tpoint p = t->root;
-	CreateTree(p, 1, 2);x
+	CreateTree(p, 1, 2);
 	Tpoint q = p;
 	p = Newroot(0, p);
 	q = Newroot(1, q);
